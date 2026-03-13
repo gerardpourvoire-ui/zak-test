@@ -1,0 +1,355 @@
+ /* styles.css */
+
+/* Corps de page */
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  background: #121212;
+  color: #4927a0;
+}
+
+
+.bubbles-container {
+  display: flex;
+  justify-content: center; /* centre horizontalement */
+  gap: 150px; /* espace entre chaque bulle */
+  padding: 20px;
+  flex-wrap: wrap; /* pour que ça aille à la ligne si trop large */
+}
+
+.bubble-card {
+  background: linear-gradient(to bottom, #30005a, #8a0075);
+  border-radius: 20px; /* coins arrondis */
+  width: 150px;
+  height: 220px;  /* un peu plus haut pour laisser de la place au texte */
+  padding: 15px;
+  box-sizing: border-box;
+  text-align: center;
+  color: #c11120;
+  box-shadow: 0 0 15px rgba(170, 0, 255, 0.7);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  transition: transform 0.3s ease;
+}
+
+.bubble-card:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 25px rgb(255, 0, 255);
+}
+
+.bubble-card img {
+  width: 100px;
+  height: 100px;
+  border-radius: 15px; /* coins arrondis sur l'image aussi */
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+
+.bubble-card p {
+  margin: 0;
+  font-size: 14px;
+  color: #d9b3ff;
+}
+.bulle-rectangulaire img {
+  width: 5550px;        /* largeur personnalisée */
+  height: auto;        /* garde le bon ratio hauteur/largeur */
+  border-radius: 15px;
+  margin-bottom: 15px;
+}
+
+/* En-tête */
+header {
+  background: linear-gradient(to bottom, #30005a, #8a0075);
+  padding: 1rem;
+  text-align: center;
+}
+
+/* Liens de navigation */
+header nav a {
+  color: #dd8195; /* Amélioration de contraste */
+  margin: 0 1rem;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+
+
+.h3-link {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Section du logo */
+.logo-section {
+  max-height: 80px;
+  text-align: center;                               
+  padding: 0.5rem 0;
+}
+.logo-section img{
+  width: auto;
+  height:116px;
+
+}
+
+/* Section principale avec image de fond */
+.hero {
+  background: url('logo.png') center/cover no-repeat;
+  padding: 2rem;
+  text-align: center;
+}
+
+/* Titre principal */
+.hero h1 {
+  font-size: 1.5rem;
+  color: #851d9c;
+}
+
+/* Paragraphe de présentation */
+.hero p {
+  max-width: 800px;
+  margin: 0.5rem auto;
+  color: #c11120;
+}
+.menu {
+  display: flex;
+  gap: 150px; /* espace entre les liens */
+  justify-content: center; /* centrer horizontalement */
+  font-size: 33px; /* taille du texte */
+}
+
+.menu {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  top: -40px;       /* Monte le menu */
+  left: -34px;      /* Décale vers la gauche */
+}
+
+/* Section des produits */
+.products {
+  display: flex;
+  justify-content: space-around;
+  background: linear-gradient(to bottom, #2e0047,#30005a );  
+  padding: 2rem;
+  flex-wrap: wrap;
+}
+
+  body {
+    font-family: 'Arial', sans-serif;
+    background: #1e1e1e;
+    color: #620fe7;
+    line-height: 1.6;
+  }
+
+  .texte-special {
+    color: #620fe7;  /* Couleur du texte */
+    font-size: 20px;  /* Taille de la police */
+    font-weight: bold;  /* Mettre en gras */
+}
+
+.bulle-rectangulaire {
+  background:#1e1e1e;
+  border-radius: 20px;
+  padding: 30px;
+  width: 300px;
+  margin: 20px auto;
+  text-align: center;
+  color: #b3ffda;
+}
+
+
+
+/* Plein écran image */
+#fullscreen-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(10, 0, 30, 0.95);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.prix-link {
+  color: #c11120;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.prix-link:hover {
+  color: #c11120;
+}
+
+#fullscreen-container img {
+  max-width: 90%;
+  max-height: 90%;
+  border-radius: 15px;
+  box-shadow: 0 0 30px rgba(255, 0, 255, 0.7);
+}
+
+#fullscreen-container.hidden {
+  display: none;
+}
+
+#close-btn {
+  position: absolute;
+  top: 30px;
+  right: 40px;
+  font-size: 40px;
+  color: white;
+  cursor: pointer;
+}
+
+.bulle-rectangulaire img {
+  width: 100%;
+  max-width: 200px;
+  border-radius: 15px;
+  margin-bottom: 15px;
+}
+
+.bulle-rectangulaire h2 {
+  margin: 10px 0;
+  color: #851d9c;
+}
+
+.bulle-rectangulaire p {
+  margin: 0;
+  color: #c11120;
+}
+
+.bulle-rectangulaire strong {
+  color: #c11120;
+  margin-top: 10px;
+  display: block;
+}
+  
+  .hero h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+
+  
+  .product-highlight {
+    display: flex;
+    background: linear-gradient(to bottom, #8a0075 , #30005a);
+    padding: 30px;
+    gap: 30px;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .product-highlight img {
+    width: 200px;
+  }
+
+  .product-info h2 {
+    margin-bottom: 10px;
+  }
+  
+  .product-info ul {
+    list-style: disc;
+    padding-left: 20px;
+  }
+  
+  .carousel {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    background: linear-gradient(to bottom, #30005a ,#2e0047);  
+    padding: 90px;
+  }
+  
+  .carousel img {
+    width: 60px;
+    
+  }
+
+  .carousel-container {
+    display: flex;
+    gap: 20px;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    padding: 20px;
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
+}
+.bubble {
+    flex: 0 0 auto;
+    width: 100px;
+    height: 100px;
+    background-color: #1a1a1a;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    scroll-snap-align: center;
+    overflow: hidden;
+}
+.bubble img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+  }
+  .products-grid {
+    display: flex;
+    justify-content: space-around;
+    background: linear-gradient(to bottom, #2e0047,#30005a );  
+    padding: 30px 0;
+  }
+  
+  .product-card {
+    text-align: center;
+  }
+  
+  .product-card img {
+    width: 100px;
+    margin-bottom: 10px;
+  }
+  
+  footer {
+   background: linear-gradient(to bottom, #2e0047, #8a0075);
+    padding: 40px 20px;
+  }
+  
+  .footer-columns {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  
+  .footer-columns div {
+    margin-bottom: 20px;
+  }
+  
+  .footer-columns h3 {
+    color: #8a000b;
+    margin-bottom: 10px;
+  }
+  
+  .footer-columns ul {
+    list-style: none;
+  }
+  
+  .footer-columns ul li a {
+    color: #003e8a;
+    text-decoration: none;
+    font-size: 14px;
+  }
+  
+  .footer-columns .socials a {
+    color: #c11120;
+    font-size: 14px;
+    text-decoration: none;
+  }
+
+  
